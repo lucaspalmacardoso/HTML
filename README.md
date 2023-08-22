@@ -10,3 +10,5 @@ Iremos desenvolver um site sobre opções de turismo, aonde abordaremos experiê
 
 - Rafael Coelho Guerino -RA 202302910963
 
+- Gabriel Bueno - RA 202302382291
+
