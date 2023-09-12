@@ -1,0 +1,13 @@
+$primary-color: blue;
+$secondy-color: aqua;
+$background-color: lightgray;
+
+main {
+    background-color: $background-color;
+    color: $primary-color;
+
+}
+
+h1{
+    color: $secondy-color;
+}
