@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WyTur</title>
+    <title>Serra Negra</title>
+
+    <!-- Adicione o link para o ícone/favicon -->
+    <link rel="icon" href="./image/logo.png" type="image/x-icon">
+
     <!-- Adicione o link para o arquivo CSS do Bootstrap (se ainda não tiver feito) -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <!-- Adicione seu próprio arquivo CSS personalizado -->
-    <link rel="stylesheet" href="../Trabalho HTML/css/styles.css">
+    <link rel="stylesheet" href="../docs/css/styles.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 </head>
 <body>
@@ -15,23 +20,23 @@
 <!-- Barra de Navegação Responsiva -->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="../Trabalho HTML/index.html"> <img src="../Trabalho HTML/image/logo.png" width="170" height="70"> <h1></h1> </a>
+    <a class="navbar-brand" href="../docs/index.html"> <img src="..//docs/image/logo.png" width="170" height="70"> <h1></h1> </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="../Trabalho HTML/index.html">Página Inicial</a>
+                <a class="nav-link" href="..//docs/index.html">Página Inicial</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Sobre</a>
+                <a class="nav-link" href="../docs/sobre.html">Sobre</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../Trabalho HTML/destino.html">Destinos</a>
+                <a class="nav-link" href="../docs/destino.html">Destinos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="..//Trabalho HTML/formulario.html">Contato</a>
+                <a class="nav-link" href="../docs/formulario.html">Contato</a>
             </li>
         </ul>
     </div>
@@ -65,22 +70,18 @@
             <section>
                 <h1><p class="texto-azul">Serra Negra</p></h1>
                 <h2>Circuito das Águas Paulista</h2>
-            </section>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <!-- Imagem  -->
-            <img src="..//Trabalho HTML/image/imagem1.jpg" width="1080" height="400" alt="Imagem Responsiva" class="img-fluid">
-        </div>
-    </div>
-</div>
-
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Imagem  -->
+                        <img src="../docs/image/imagem1.jpg" width="1080" height="400" alt="Imagem Responsiva" class="img-fluid">
+                    </div>
+                </div>
+             
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <!-- Sobre a cidade de Serra Negra -->
-            <section id="links">
+            <br>
+            <!-- Sobre a cidade de Serra Negra -->            
                 <h1>Sobre a cidade de Serra Negra</h1>
                 <br><br>
                <p>  A Estância Hidromineral de Serra Negra apresenta o turismo tradicional, de compras, de eventos e rural. Seu agradável clima de montanha, aliado às fontes de águas minerais com poderes terapêuticos e sua rica beleza natural, tornaram-lhe conhecida como "Cidade da Saúde".
@@ -91,7 +92,7 @@
                     <br>
                     Seja bem vindo à Serra Negra.</p>
                     <br><br></p>
-            </section>
+            
         </div>
     </div>
 </div>
@@ -101,17 +102,35 @@
     <div class="row">
         <div class="col-md-4">
             <a href="#" data-toggle="modal" data-target="#imagemModal">
-                <img src="..//Trabalho HTML/image/imagem1.jpg" alt="Imagem 1" class="img-thumbnail">
+                <img src="../docs/image/serra1.jpg" alt="Imagem 1" class="img-thumbnail">
             </a>
         </div>
         <div class="col-md-4">
             <a href="#" data-toggle="modal" data-target="#imagemModal">
-                <img src="..//Trabalho HTML/image/imagem1.jpg" alt="Imagem 2" class="img-thumbnail">
+                <img src="../docs/image/serra2.jpg" alt="Imagem 2" class="img-thumbnail">
             </a>
         </div>
         <div class="col-md-4">
-            <a href="..//Projeto wyden/imagem/imagem1.jpg" data-toggle="modal" data-target="#imagemModal">
-                <img src="..//Trabalho HTML/image/imagem1.jpg" alt="Imagem 3" class="img-thumbnail">
+            <a href="#" data-toggle="modal" data-target="#imagemModal">
+                <img src="../docs/image/serra3.jpg" alt="Imagem 3" class="img-thumbnail">
+            </a>
+        </div>
+    </div>
+<br>
+    <div class="row">
+        <div class="col-md-4">
+            <a href="#" data-toggle="modal" data-target="#imagemModal">
+                <img src="../docs/image/serra4.jpg" alt="Imagem 1" class="img-thumbnail">
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="#" data-toggle="modal" data-target="#imagemModal">
+                <img src="../docs/image/serra5.jpg" alt="Imagem 2" class="img-thumbnail">
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="#" data-toggle="modal" data-target="#imagemModal">
+                <img src="../docs/image/serra6.jpg" alt="Imagem 3" class="img-thumbnail">
             </a>
         </div>
     </div>
@@ -141,75 +160,61 @@
     });
 </script>
 
-
-    <center>
-        <section id="links">
-        <!--  -->
-        <h1>Conheça São Paulo</h1>
-        <br><br>
-        <h2>Aqui você encontrará todas as informações fundamentais para a sua aventura pelo estado</h2>      
-
-        <br><br>
-
-                <!-- Exemplo de ícone com link -->
-    <a href="https://www.saopaulo.sp.gov.br/" target="_blank">
-    <h4><i class="fas fa-globe"></i> Governo de São Paulo </h4> </a><br>
- 
-<br>
-<!--links lado a lado -->
-<span class="link">
-    <a href="https://www.google.com.br/maps/" target="_blank">
-    <h4><i class="fas fa-map-marker-alt"></i> Mapa </h4>
-    </a>
-</span>
-<span class="link">
-    <a href="https://www.saopaulo.sp.gov.br/fale-conosco/telefones-uteis/" target="_blank">
-    <h4><i class="fas fa-shield-alt"></i> Telefone Uteis</h4>
-    </a>
-</span>
-<br>
-<span class="link">
-    <a href="URL_DA_PÁGINA_OU_SERVIÇO_DE_SAUDE" target="_blank">
-    <h4> <i class="fas fa-heart"></i> Saúde e Bem-Estar </h4>
-    </a>
-</span>
-<span class="link">
-    <a href="https://www.climatempo.com.br/" target="_blank">
-    <h4><i class="fas fa-sun"></i> Previsão do Tempo </h4>
-    </a>
-</span>
-<br>
-        <!--redes sociais -->
-        <div class="social-icons">
-            <a href="https://www.facebook.com/seu-link" target="_blank" class="social-icon">
-                <i class="fab fa-facebook"></i>
+    <!-- Título e subtítulo centralizados -->
+    <div class="text-center">
+        <h1><p class="texto-centralizado">Conheça São Paulo</p></h1>
+        <h2><p class="texto-centralizado">Aqui você encontrará todas as informações fundamentais para a sua aventura pelo estado</p></h2>
+    </div>
+     <br>
+    <!-- Links centralizados e lado a lado -->
+    <div class="d-flex justify-content-center">
+        <!-- Exemplo de ícone com link -->
+        <div class="text-center mr-3">
+            <a href="https://www.saopaulo.sp.gov.br/" target="_blank">
+                <h4><i class="fas fa-globe"></i> Governo SP</h4>
             </a>
-            <a href="https://twitter.com/seu-link" target="_blank" class="social-icon">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/seu-link" target="_blank" class="social-icon">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            
         </div>
-    </section>
-    </center>
 
+        <!-- Links lado a lado com margem -->
+        <div class="text-center mr-3">
+            <a href="https://www.google.com.br/maps/" target="_blank">
+                <h4><i class="fas fa-map-marker-alt"></i> Mapa</h4>
+            </a>
+        </div>
 
-    <footer>
-        <!-- Rodapé do Site -->
+        <div class="text-center mr-3">
+            <a href="https://www.saopaulo.sp.gov.br/fale-conosco/telefones-uteis/" target="_blank">
+                <h4><i class="fas fa-shield-alt"></i> Telefone Uteis</h4>
+            </a>
+        </div>
+       
+        <div class="text-center ml-3">
+            <a href="https://www.climatempo.com.br/" target="_blank">
+                <h4><i class="fas fa-sun"></i> Previsão do Tempo</h4>
+            </a>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Rodapé do Site -->
+    <footer class="text-center">
         <p>&copy; 2023 Turismo São Paulo</p>
     </footer>
+</section>
 
-    <!-- Scripts do Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- Link para o Bootstrap CSS -->
+<!-- Scripts do Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Link para o Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 <!-- Link para o Font Awesome CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
 </body>
 </html>
