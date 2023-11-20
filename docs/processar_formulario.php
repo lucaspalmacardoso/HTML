@@ -1,30 +1,39 @@
 <?php
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Recupere os dados do formulário
+    // Recuperar os dados do formulário
     $nome = $_POST["nome"];
     $email = $_POST["email"];
     $telefone = $_POST["telefone"];
     $idade = $_POST["idade"];
     $sexo = $_POST["sexo"];
-    $interesses = isset($_POST["interesses"]) ? implode(", ", $_POST["interesses"]) : "";
+    $interesses = implode(", ", $_POST["interesses"]);
     $mensagem = $_POST["mensagem"];
     $cep = $_POST["cep"];
 
-    // Processar os dados conforme necessário (por exemplo, enviar e-mail, armazenar em um banco de dados, etc.)
+    // Conectar ao banco de dados
+    $conexao = new mysqli("localhost", "root", "", "turismo_db");
 
-    // Exemplo de exibição dos dados (substitua isso com o seu próprio código)
-    echo "<h2>Dados Recebidos:</h2>";
-    echo "<p><strong>Nome:</strong> $nome</p>";
-    echo "<p><strong>Email:</strong> $email</p>";
-    echo "<p><strong>Telefone:</strong> $telefone</p>";
-    echo "<p><strong>Idade:</strong> $idade</p>";
-    echo "<p><strong>Sexo:</strong> $sexo</p>";
-    echo "<p><strong>Interesses:</strong> $interesses</p>";
-    echo "<p><strong>Mensagem:</strong> $mensagem</p>";
-    echo "<p><strong>CEP:</strong> $cep</p>";
+    // Verificar a conexão
+    if ($conexao->connect_error) {
+        die("Falha na conexão: " . $conexao->connect_error);
+    }
+
+    // Inserir dados na tabela
+    $sql = "INSERT INTO formulario (nome, email, telefone, idade, sexo, interesses, mensagem, cep) 
+            VALUES ('$nome', '$email', '$telefone', $idade, '$sexo', '$interesses', '$mensagem', '$cep')";
+
+    if ($conexao->query($sql) === TRUE) {
+        echo "<p>Dados inseridos no banco de dados com sucesso.</p>";
+    } else {
+        echo "Erro na inserção de dados: " . $conexao->error;
+    }
+
+    // Fechar a conexão
+    $conexao->close();
 } else {
-    // Se alguém tentar acessar este arquivo diretamente, redirecione para o formulário
     header("Location: formulario.html");
     exit();
 }
+
 ?>
