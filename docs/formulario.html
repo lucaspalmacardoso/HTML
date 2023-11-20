@@ -4,18 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-     <!-- Adicione o link para o ícone/favicon -->
-     <link rel="icon" href="./image/logo.png" type="image/x-icon">
-
-    <!-- Adicione o link para o arquivo CSS do Bootstrap (se ainda não tiver feito) -->
+    <link rel="icon" href="./image/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-    <!-- Adicione seu próprio arquivo CSS personalizado -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-
-<!-- Barra de Navegação Responsiva -->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="./index.html"> <img src="./image/logo.png" width="170" height="70"> <h1></h1> </a>
@@ -39,13 +32,11 @@
         </ul>
     </div>
 
-    <!-- Barra de Pesquisa -->
-    <form class="form-inline my-2 my-lg-0">
+    <form action="./processar_formulario.php" method="post">
         <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
         <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
     </form>
 
-    <!-- Links de Redes Sociais com Ícones -->
     <ul class="navbar-nav ml-md-3">
         <li class="nav-item">
             <a class="nav-link" href="#"><i class="fab fa-facebook"></i></a>
@@ -59,118 +50,116 @@
     </ul>
 </nav>
 
-    </header>
-
-
-    <section id="contato">
-        <div class="container mt-5">
-            <h1>Preencha o Formulário para receber dicas de Turismo</h1>
-            <br>
-            <form>
-                <div class="form-group">
-                    <label for="nome" class="text-with">Nome:</label>
-                    <input type="text" class="form-control" id="nome" placeholder="Seu nome">
-                </div>
-                <div class="form-group">
-                    <label for="email" class="text-left">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Seu email">
-                </div>
-                <div class="form-group">
-                    <label for="telefone" class="text-left">Telefone:</label>
-                    <input type="tel" class="form-control" id="telefone" placeholder="Seu telefone">
-                </div>
-                <div class="form-group">
-                    <label for="idade" class="text-left">Idade:</label>
-                    <input type="number" class="form-control" id="idade" placeholder="Sua idade">
-                </div>
-                <div class="form-group">
-                    <label for="sexo" class="text-left">Sexo:</label>
-                    <select class="form-control" id="sexo">
-                        <option value="masculino">Masculino</option>
-                        <option value="feminino">Feminino</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="interesses" class="text-left">Interesses:</label>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="interesse1" value="esportes">
-                        <label class="form-check-label" for="interesse1">Dicas</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="interesse2" value="música">
-                        <label class="form-check-label" for="interesse2">Passeios</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="interesse3" value="cinema">
-                        <label class="form-check-label" for="interesse3">Eventos</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="mensagem" class="text-left">Mensagem:</label>
-                    <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-        </div>
+<section id="contato">
+    <div class="container mt-5">
+        <h1>Preencha o Formulário para receber dicas de Turismo</h1>
         <br>
+        <form>
+            <div class="form-group">
+                <label for="nome" class="text-with">Nome:</label>
+                <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+            </div>
+            <div class="form-group">
+                <label for="email" class="text-left">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Seu email">
+            </div>
+            <div class="form-group">
+                <label for="telefone" class="text-left">Telefone:</label>
+                <input type="tel" class="form-control" id="telefone" placeholder="Seu telefone">
+            </div>
+            <div class="form-group">
+                <label for="idade" class="text-left">Idade:</label>
+                <input type="number" class="form-control" id="idade" placeholder="Sua idade">
+            </div>
+            <div class="form-group">
+                <label for="sexo" class="text-left">Sexo:</label>
+                <select class="form-control" id="sexo">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="interesses" class="text-left">Interesses:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="interesse1" value="esportes">
+                    <label class="form-check-label" for="interesse1">Dicas</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="interesse2" value="música">
+                    <label class="form-check-label" for="interesse2">Passeios</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="interesse3" value="cinema">
+                    <label class="form-check-label" for="interesse3">Eventos</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="mensagem" class="text-left">Mensagem:</label>
+                <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
+            </div>
+            
+            <!-- Novo campo para o CEP e botão de consulta -->
+            <div class="form-group">
+                <label for="cep" class="text-left">CEP:</label>
+                <input type="text" class="form-control" id="cep" maxlength="9" placeholder="Digite o CEP">
+                <button type="button" class="btn btn-primary mt-2" onclick="consultarCEP()">Consultar Endereço</button>
+            </div>
 
-     <section>
-            <!-- Título e subtítulo centralizados -->
-            <div class="text-center">
-                <h1><p class="texto-centralizado">Conheça São Paulo</p></h1>
-                <h2><p class="texto-centralizado">Aqui você encontrará todas as informações fundamentais para a sua aventura pelo estado</p></h2>
-            </div>
-             <br>
-            <!-- Links centralizados e lado a lado -->
-            <div class="d-flex justify-content-center">
-                <!-- Exemplo de ícone com link -->
-                <div class="text-center mr-3">
-                    <a href="https://www.saopaulo.sp.gov.br/" target="_blank">
-                        <h4><i class="fas fa-globe"></i> Governo SP</h4>
-                    </a>
-                </div>
-        
-                <!-- Links lado a lado com margem -->
-                <div class="text-center mr-3">
-                    <a href="https://www.google.com.br/maps/" target="_blank">
-                        <h4><i class="fas fa-map-marker-alt"></i> Mapa</h4>
-                    </a>
-                </div>
-        
-                <div class="text-center mr-3">
-                    <a href="https://www.saopaulo.sp.gov.br/fale-conosco/telefones-uteis/" target="_blank">
-                        <h4><i class="fas fa-shield-alt"></i> Telefone Uteis</h4>
-                    </a>
-                </div>
-               
-                <div class="text-center ml-3">
-                    <a href="https://www.climatempo.com.br/" target="_blank">
-                        <h4><i class="fas fa-sun"></i> Previsão do Tempo</h4>
-                    </a>
-                </div>
-            </div>
-        
-            <br>
-        
-            <!-- Rodapé do Site -->
-            <footer class="text-center">
-                <p>&copy; 2023 Turismo São Paulo</p>
-            </footer>
-        </section>
-        
-        
-        <!-- Scripts do Bootstrap -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        
-        <!-- Link para o Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        
-        <!-- Link para o Font Awesome CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        
-        </body>
-        </html>
-        
+            <!-- Adicione esta div para exibir os resultados -->
+            <div id="resultadoCEP" class="mt-4"></div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<!-- Seu código de "Conheça São Paulo" ... -->
+
+<script>
+    function consultarCEP() {
+        var cepInput = document.getElementById('cep');
+        var cep = cepInput.value.replace(/\D/g, ''); // Remover caracteres não numéricos
+
+        if (cep.length !== 8) {
+            alert('Por favor, digite um CEP válido com 8 dígitos.');
+            return;
+        }
+
+        var url = `https://viacep.com.br/ws/${cep}/json/`;
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                if (data.erro) {
+                    alert('CEP não encontrado.');
+                } else {
+                    exibirResultadoCEP(data);
+                }
+            })
+            .catch(error => {
+                console.error('Erro na consulta:', error);
+                alert('Ocorreu um erro na consulta. Por favor, tente novamente.');
+            });
+    }
+
+    function exibirResultadoCEP(data) {
+        var resultadoDiv = document.getElementById('resultadoCEP');
+        resultadoDiv.innerHTML = `
+            <h2>Resultado da Consulta</h2>
+            <p><strong>CEP:</strong> ${data.cep}</p>
+            <p><strong>Logradouro:</strong> ${data.logradouro}</p>
+            <p><strong>Bairro:</strong> ${data.bairro}</p>
+            <p><strong>Cidade:</strong> ${data.localidade}</p>
+            <p><strong>Estado:</strong> ${data.uf}</p>
+        `;
+    }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</body>
+</html>
         
