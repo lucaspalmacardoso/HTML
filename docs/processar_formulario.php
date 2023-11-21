@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $telefone = $_POST["telefone"];
     $idade = $_POST["idade"];
     $sexo = $_POST["sexo"];
-    $interesses = implode(", ", $_POST["interesses"]);
+    $interesses = $_POST["interesses"];
     $mensagem = $_POST["mensagem"];
     $cep = $_POST["cep"];
 
